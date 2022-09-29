@@ -111,3 +111,34 @@ html {
     }
   }
 }
+
+.content_center_xy {
+  position: absolute;
+  @include center_xy;
+  p {
+    text-align: right;
+    small { font-size: 12px; }
+  }
+  .content_center_lg {
+    text-align: left;
+    @include media-breakpoint-up(lg) { text-align: center; }
+  }
+}
+
+.btn_outline_custom {
+  display: inline-block;
+  padding: .7rem;
+  border: 2px solid var(--txtd);
+  border-radius: 15px;
+  color: var(--txtd);
+  font-size: 15px;
+  text-decoration: none;
+  &:hover {
+    background-color: var(--bgl);
+    color: var(--txtl);
+  }
+  @include media-breakpoint-up(lg) {
+    padding: .5rem 2rem;
+    font-size: 20px;
+  }
+}
