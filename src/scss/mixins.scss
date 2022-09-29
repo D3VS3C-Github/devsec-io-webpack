@@ -1,0 +1,23 @@
+// REUSABLE CSS Properties as Functions
+@mixin zero_margin_padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin zero_width_height {
+  width: 0;
+  height: 0;
+}
+
+@mixin center_xy {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin responsive_fontsize {
+  @include media-breakpoint-up(sm) { font-size: 2.5rem; }
+  @include media-breakpoint-up(md) { font-size: 3.1rem; }
+  @include media-breakpoint-up(lg) { font-size: 4.5rem; }
+  @include media-breakpoint-up(xl) { font-size: 4.6rem; }
+}
