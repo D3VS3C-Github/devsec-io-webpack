@@ -1,0 +1,31 @@
+{
+  "name": "devsec-io-webpack",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D3VS3C-Github/devsec-io-webpack.git"
+  },
+  "author": "D3VS3C-Github",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D3VS3C-Github/devsec-io-webpack/issues"
+  },
+  "homepage": "https://github.com/D3VS3C-Github/devsec-io-webpack#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}
