@@ -17,20 +17,24 @@ Made By D3VS3C
 
   <body>
     <!-- [BOOTSTRAP] Navigation Bar | DEFAULT -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand fw-bold" 
+           href="http://127.0.0.1:8000">DEVSEC IO</a>
 
-        <button class="navbar-toggler" 
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" 
                 type="button" 
                 data-bs-toggle="collapse" 
                 data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" 
                 aria-expanded="false" 
                 aria-label="Toggle navigation">
-
-          <span class="navbar-toggler-icon"></span>
+          
+          <!-- [Animated] Custom Hamburger Menu -->
+          <span class="toggler_icon bar--top"></span>
+          <span class="toggler_icon bar--mid"></span>
+          <span class="toggler_icon bar--low"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,6 +45,12 @@ Made By D3VS3C
                  aria-current="page" 
                  href="#">HOME</a>
             </li>
+
+            <!-- CSS [Dark/Light] Theme Switcher Toggle -->
+            <div class="theme_toggle">
+              <input type="checkbox" id="switch" name="theme">
+              <label for="switch">Toggle</label>
+            </div>
 
             <!--
             <li class="nav-item">
