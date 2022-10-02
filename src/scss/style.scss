@@ -115,9 +115,10 @@ html {
 .content_center_xy {
   position: absolute;
   @include center_xy;
+  small { font-size: 13px; } 
   p {
     text-align: right;
-    small { font-size: 12px; }
+    small { font-size: 11px; }
   }
   .content_center_lg {
     text-align: left;
@@ -127,15 +128,16 @@ html {
 
 .btn_outline_custom {
   display: inline-block;
-  padding: .7rem;
+  padding: .6rem 1rem;
   border: 2px solid var(--txtd);
-  border-radius: 15px;
+  border-radius: 22px;
   color: var(--txtd);
   font-size: 15px;
   text-decoration: none;
   &:hover {
     background-color: var(--bgl);
     color: var(--txtl);
+    transition: .5s ease-in-out;
   }
   @include media-breakpoint-up(lg) {
     padding: .5rem 2rem;
