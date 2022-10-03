@@ -118,7 +118,13 @@ html {
   small { font-size: 13px; } 
   p {
     text-align: right;
-    small { font-size: 11px; }
+    small { 
+      font-size: 13px;
+      a { 
+        color: var(--txtd);
+        text-decoration: none;
+      }
+    }
   }
   .content_center_lg {
     text-align: left;
@@ -130,7 +136,7 @@ html {
   display: inline-block;
   padding: .6rem 1rem;
   border: 2px solid var(--txtd);
-  border-radius: 22px;
+  border-radius: 18px;
   color: var(--txtd);
   font-size: 15px;
   text-decoration: none;
