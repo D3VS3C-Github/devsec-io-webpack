@@ -150,3 +150,63 @@ html {
     font-size: 20px;
   }
 }
+
+.container_w100 {
+  width: 100%;
+  min-height: 200rem;
+  background-color: var(--bgl);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  h2 {
+    position: relative;
+    color: var(--txtl);
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 15%;
+      height: 5px;
+      background-color: var(--bgd);
+      border-radius: 25px;
+    }
+  }
+
+  .card_custom {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    min-height: 12rem;
+    border-radius: 30px;
+    background-color: var(--bgd);
+    text-align: left;
+    @include media-breakpoint-up(sm) {
+      text-align: right;
+    }
+    .card_content {
+      @include media-breakpoint-up(sm) {
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1.5rem;
+      }
+    }
+    h3 {
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 3rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 2.1rem;
+      }
+    }
+    small {
+      font-weight: bold;
+      font-size: 15px;
+      @include media-breakpoint-up(sm) {
+        margin: 0;
+        padding: 0;
+        font-size: 7px;
+      }
+    }
+  }
+}
