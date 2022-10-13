@@ -153,7 +153,7 @@ html {
 
 .container_w100 {
   width: 100%;
-  min-height: 200rem;
+  min-height: 100rem;
   background-color: var(--bgl);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -206,6 +206,59 @@ html {
         margin: 0;
         padding: 0;
         font-size: 7px;
+      }
+    }
+  }
+
+  .w100_color {
+    h4, small { color: var(--txtl); }
+    h4 {
+      font-size: 2.5rem;
+    }
+    small {
+      font-size: 14px;
+    }
+  }
+
+  .banner_container {
+    position: relative;
+    margin: 1rem;
+    min-height: 33rem;
+    border-radius: 30px;
+    background-color: var(--bgd);
+    .banner_content {
+      padding: 1rem;
+      .banner_header {
+        padding: 1rem;
+        small {
+          font-size: 12px;
+        }
+        h5 {
+          position: relative;
+          font-size: 1.5rem;
+          @include media-breakpoint-up(sm) { font-size: 4rem; }
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -1.5rem;
+            left: 14%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+            height: 4px;
+            background-color: var(--bgl);
+            border-radius: 25px;
+          }
+        }
+      }
+      .banner_btn_container {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        .btn-primary {
+          padding: .8rem 2rem;
+          border-radius: 20px;
+          font-size: 12px;
+        }
       }
     }
   }
