@@ -1,0 +1,18 @@
+.btn_outline_custom {
+  display: inline-block;
+  padding: .6rem 1rem;
+  border: 2px solid var(--txtd);
+  border-radius: 18px;
+  color: var(--txtd);
+  font-size: 15px;
+  text-decoration: none;
+  &:hover {
+    background-color: var(--bgl);
+    color: var(--txtl);
+    transition: .5s ease-in-out;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: .5rem 2rem;
+    font-size: 20px;
+  }
+}

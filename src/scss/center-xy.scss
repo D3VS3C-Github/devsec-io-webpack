@@ -1,0 +1,20 @@
+.content_center_xy {
+  position: absolute;
+  @include center_xy;
+  small { font-size: 13px; } 
+  p {
+    text-align: right;
+    small { 
+      font-size: 13px;
+      a { 
+        color: var(--txtd);
+        text-decoration: none;
+      }
+    }
+  }
+  .content_center_lg {
+    text-align: left;
+    @include media-breakpoint-up(lg) { text-align: center; }
+  }
+}
+
